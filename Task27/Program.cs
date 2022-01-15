@@ -1,17 +1,15 @@
 ﻿//  Определить количество цифр в числе
-int Numbers (int A)
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int result = number/10;
+int count = 1;
+while (result !=0)
 {
-    int count = 0;
-    while (A != 0)
-    {
-        A = A/10;
-        count++;
-    }
-    return count;
+    result = result/10;
+    count++;
 }
-
-Console.WriteLine("Введите число");
-int A = Convert.ToInt32(Console.ReadLine());
-int N = Numbers (A);
-Console.WriteLine($"В числе {A} {N} цифр");
+if (result == 0)
+{
+    Console.WriteLine("В вашем числе " + count + " цифр");
+}
 
