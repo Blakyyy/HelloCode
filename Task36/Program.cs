@@ -20,3 +20,4 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 Console.WriteLine($"Всего четных чисел - {count}");
+Console.WriteLine($"Всего НЕ четных чисел - {array.Length - count}");
